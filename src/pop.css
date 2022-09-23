@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    appearance: none;
+    background-color: var(--in-content-page-background);
+    color: var(--in-content-page-color);
+    font-size: 16px;
+}
+
+.qr {
+    margin: 1rem;
+}
+
+.qr_wrapper {
+    background: #fff;
+}
+
+svg {
+    display: block;
+    width: 100%;
+}
+:root {
+    --in-content-page-color: #15141a;
+    --in-content-page-background: #fff;
+    --in-content-box-border-color: color-mix(in srgb, currentColor 41%, transparent);
+    --in-content-box-background: #fff;
+    --in-content-focus-outline-color: var(--in-content-primary-button-background);
+    --in-content-button-border-radius: 4px;
+    --in-content-button-horizontal-padding: 15px;
+    --in-content-button-vertical-padding: 7px;
+    --in-content-primary-button-text-color: #fbfbfe;
+    --in-content-primary-button-text-color-hover: var(--in-content-primary-button-text-color);
+    --in-content-primary-button-background: #0061e0;
+    --in-content-primary-button-background-hover: #0250bb;
+}
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --in-content-page-background: #1c1b22;
+        --in-content-page-color: #fbfbfe;
+        --in-content-box-background: #23222b;
+        --in-content-primary-button-text-color: #2b2a33;
+        --in-content-primary-button-background: #0df;
+        --in-content-primary-button-background-hover: #80ebff;
+        --in-content-primary-button-background-active: #aaf2ff;
+    }
+}
+input {
+    appearance: none;
+    border: 1px solid var(--in-content-box-border-color);
+    border-radius: 4px;
+    color: inherit;
+    background-color: var(--in-content-box-background);
+    font-family: inherit;
+    font-size: inherit;
+    padding: 2px 2px 3px;
+    padding-inline: 8px;
+    margin: 1rem 1rem 0 1rem;
+}
+
+input:focus {
+    border-color: transparent;
+    outline: 2px solid var(--in-content-focus-outline-color);
+    outline-offset: -1px;
+}
+
+
+.actions a {
+    border: 1px solid transparent;
+    border-radius: var(--in-content-button-border-radius);
+    background-color: var(--in-content-primary-button-background);
+    color: var(--in-content-primary-button-text-color);
+    font-family: inherit;
+    font-size: inherit;
+    text-align: center;
+    text-decoration: none;
+    padding: var(--in-content-button-vertical-padding) var(--in-content-button-horizontal-padding);
+}
+
+.actions a:hover {
+    background-color: var(--in-content-primary-button-background-hover);
+    color: var(--in-content-primary-button-text-color-hover);
+}
+
+.actions a:focus-visible {
+    box-shadow: none;
+    outline: 2px solid var(--in-content-focus-outline-color);
+    outline-offset: 2px;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
