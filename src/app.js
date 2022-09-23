@@ -1,3 +1,17 @@
+/*
+	Repo forked from: https://github.com/pudymody/firefox-qr
+
+	- Removed the download actions, I do not want people using this add on in a way that could leave evidence to their history vai whatever URLs they download. (This is a privacy focused QR generator)
+
+	- Apart from that it is virtually identical, I am not trying to reinvent the wheel.
+
+	- Allowing for downloads of qr codes from sites visited allows for a potential history of visited URL's
+
+	- This means that one could download a URL that could be considered forbidden (in certain regions) and if they were to have their machines seized that their history could be traced. 
+
+*/
+
+
 const $text = document.querySelector("input");
 const $qr = document.querySelector(".qr");
 const $exports = document.querySelectorAll(".actions a");
