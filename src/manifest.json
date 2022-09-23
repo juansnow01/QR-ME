@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "QR Code",
-  "version": "1.3",
-  "description": "Adds a button to the address bar to get the current url as a qr code",
+  "name": "QR-ME",
+  "version": "1",
+  "description": "address bar functionality to allow you to generate a QR code of the current URL.",
   "icons": {
 		"48": "icon.svg",
 		"96": "icon.svg"
@@ -12,7 +12,7 @@
 		"show_matches": ["<all_urls>"],
 		"browser_style": true,
 		"default_icon": "icon.svg",
-		"default_title": "QR Code",
+		"default_title": "QR-ME",
 		"default_popup": "popup.html"
 	}
 }
